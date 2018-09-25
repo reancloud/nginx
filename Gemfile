@@ -1,9 +1,8 @@
-# This gemfile provides additional gems for testing and releasing this cookbook
-# It is meant to be installed on top of ChefDK which provides the majority
-# of the necessary gems for testing this cookbook
-#
-# Run 'chef exec bundle install' to install these dependencies
+# frozen_string_literal: true
+
+# This tells bundler the default place to get ruby gems from.
 
 source 'https://rubygems.org'
 
-gem 'community_cookbook_releaser'
+gem 'berkshelf', '~> 7.0'
+gem 'pipeline-tasks'
